@@ -3,4 +3,4 @@ PlaygroundSkeleton
 
 Playground Skeleton
 
-composer create-project --repository-url="https://github.com/gregorybesson/PlaygroundSkeleton" -s dev playground/skeleton path/to/install
+composer create-project --repository-url="https://github.com/gregorybesson/PlaygroundFuse" -s dev playground/fuse path/to/install
