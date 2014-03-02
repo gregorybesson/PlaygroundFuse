@@ -1,0 +1,36 @@
+<?php
+// get child view
+$children = $this->viewModel()->getCurrent()->getChildren();
+$childView = $children[0];
+
+echo $this->doctype();
+?>
+
+<html lang="<?php echo strtolower($childView->locale); ?>">
+    <head>
+        <meta charset="utf-8">
+        <?php $titlePage = $this->translate('Skeleton'); ?>
+        <?php echo $this->headTitle($titlePage)->setSeparator(' - ')->setAutoEscape(false) ?>
+        
+        <?php echo $this->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+            ->setCharset('UTF-8');
+        ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico')); ?>        
+    </head>
+    <body>
+        
+        <div class="main-wrapper clearfix slideoff" id="main-wrapper">
+            <?php echo $this->content; ?>
+        </div> <!-- /container -->
+        
+        <!-- Scripts -->
+        <?php
+        echo $this->headScript();
+        echo $this->inlineScript();
+        ?>
+    </body> 
+</html>

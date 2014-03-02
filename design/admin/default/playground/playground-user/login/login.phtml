@@ -1,0 +1,39 @@
+<?php
+$form = $this->loginForm;
+$form->prepare();
+?>
+
+<form class="form-horizontal" method="post" id="loginAdmin">
+   <?php echo $this->formElementErrors($form->get('identity')) ?>
+    <input type="email" class="form-control" id="identity" name="identity" placeholder="<?php echo  $this->translate($form->get('identity')->getAttribute('placeholder')); ?>">
+    <input type="password" class="form-control" id="credential" name="credential" placeholder="<?php echo  $this->translate($form->get('credential')->getAttribute('placeholder')); ?>">
+    <button type="submit" name="submit" class="btn btn-success pull-right"><?php echo $this->translate('Validate'); ?></button>
+    <a data-toggle="modal" href="#myModal"><button name="button" class="btn btn-danger pull-left"><?php echo $this->translate('Forgot password?'); ?></button></a>
+</form>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel"><?php echo $this->translate('Forgot password?'); ?></h4>
+      </div>
+      <form action="<?php //echo $this->url('admin/lekioskadmin/passwordForgot', array('channel' => $this->channel)); ?>" method="post" accept-charset="utf-8" style="margin-bottom:0px;">
+      <div class="modal-body">
+        <div class="control-group">
+          <label class="control-label" for="signin_username"><?php echo $this->translate('Email'); ?> :</label>
+          <div class="controls">
+            <input type="text" class="form-control" id="signin_username" name="email" type=email placeholder="exemple@domaine.com" required />
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal"><?php echo $this->translate('Close');?></button>
+        <button type="submit" class="btn btn-danger pull-right"><?php echo $this->translate('Reset My Password'); ?></button>
+      </div>
+      </form>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>

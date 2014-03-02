@@ -1,0 +1,35 @@
+{
+    "name": "playground/skeleton",
+    "description": "Skeleton Application for Playground",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "framework",
+        "zf2",
+        "playground"
+    ],
+    "homepage": "http://www.playground.gg/",
+    "repositories": [
+    	{
+        "type": "git",
+        "url":  "https://github.com/gregorybesson/hybridauth"
+    	}
+	],
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.*",
+        "playground/user" : "dev-develop",
+        "playground/core" : "dev-master",
+        "playground/design" : "dev-develop",
+        "playground/translate" : "dev-develop",
+		"zendframework/zend-developer-tools" : "dev-master",
+		"doctrine/data-fixtures" : "dev-master",
+		"hounddog/doctrine-data-fixture-module" : "0.*",
+		"jhuet/zdt-logger-module" : "0.*",
+		"ocramius/ocra-cached-view-resolver" : "1.0.*",
+		"playground/zdt-templatehint": "dev-master",
+		"playground/hybridauth" : "dev-master",
+		"bjyoungblood/bjy-authorize" : "1.1.*",
+		"doctrine/doctrine-module": "0.8.*@dev",
+		"doctrine/doctrine-orm-module": "0.8.*@dev"
+    }
+}
