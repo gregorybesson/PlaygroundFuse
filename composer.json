@@ -11,6 +11,23 @@
     "homepage": "http://www.playground.gg/",
     "repositories": [
     	{
+	        "type": "package",
+	        "package": {
+	            "name": "playground/fuse",
+	            "version": "dev-master",
+	            "source": {
+	                "url": "git://github.com/gregorybesson/PlaygroundFuse.git",
+	                "type": "git",
+	                "reference": "master"
+	            },
+	            "autoload": {
+	                "psr-0" : {
+	                    "Weaverryan\\DangerZone" : "src"
+	                }
+	            }
+	        }
+	    },
+    	{
         "type": "git",
         "url":  "https://github.com/gregorybesson/hybridauth"
     	}
