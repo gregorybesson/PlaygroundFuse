@@ -1,11 +1,12 @@
 {
-    "name": "playground/skeleton",
-    "description": "Skeleton Application for Playground",
+    "name": "playground/fuse",
+    "description": "Fuse Application for Playground",
     "license": "BSD-3-Clause",
     "keywords": [
         "framework",
         "zf2",
-        "playground"
+        "playground",
+        "fuse"
     ],
     "homepage": "http://www.playground.gg/",
     "repositories": [
