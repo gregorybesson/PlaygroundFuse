@@ -1,6 +1,9 @@
 PlaygroundFuse
 ==================
 
-Playground Fuse
+execute this command as root :
 
-composer create-project --repository-url="https://github.com/gregorybesson/PlaygroundFuse" -s dev playground/fuse path/to/install
+```
+composer create-project -s dev playground/fuse my-project
+```
+
