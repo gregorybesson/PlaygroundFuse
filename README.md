@@ -47,3 +47,17 @@ launch the install script (with root privileges)
 ./install.sh
 ```
 Relaunch the web server, and you're ready to go !
+
+# Adding a module
+
+Add a SVN repository
+```
+sudo composer config repositories.loadster vcs http://xx.xx.xx.xx/svn/LABS/ZF2/LOADSTER
+```
+
+Add the module to composer
+```
+sudo composer require playground/loadster:dev-trunk
+```
+
+That's it !
