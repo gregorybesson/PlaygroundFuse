@@ -1,7 +1,7 @@
 <?php
 
 $dbParams = array(
-    'database'  => 'playground',
+    'database'  => 'playgroundfuse',
     'username'  => 'root',
     'password'  => 'root',
     'hostname'  => 'localhost',
@@ -16,7 +16,7 @@ return array(
     'design' => array(
         'admin' => array(
             'package' => 'default',
-            'theme' => 'base',
+            'theme' => 'playground',
         ),
         'frontend' => array(
             'package' => 'default',
