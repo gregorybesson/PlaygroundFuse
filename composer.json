@@ -20,7 +20,7 @@
         "zendframework/zendframework": "2.*",
         "playground/user" : "dev-develop",
         "playground/core" : "dev-master",
-        "playground/design" : "dev-develop",
+        "playground/design" : "dev-master",
         "playground/translate" : "dev-develop",
 		"zendframework/zend-developer-tools" : "dev-master",
 		"doctrine/data-fixtures" : "dev-master",
